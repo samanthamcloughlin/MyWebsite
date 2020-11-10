@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    h2 {
+      padding-top: 1%;
+      padding-bottom: 1.5%;
+      font-family: "Tahoma", Geneva, serif;
+      font-size: 250%;
+      text-align: center;
+      position:relative;
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      font-weight: normal;
+    }
+
+    nav {
+      padding-top:0.5%;
+      padding-bottom: 1%;
+      background-color: #DADADA;
+      font-family: "Tahoma", Geneva, serif;
+      font-size: 150%;
+      text-align: center;
+      position:relative;
+      height: 50%;
+      width: 97%;
+      margin: auto;
+      font-weight: normal;
+    }
+
+    img {
+      width:20%;
+      padding:2%
+    }
+
+    .menulink {
+      color: black;
+      text-decoration: none;
+    }
+    .menulink:hover{color:#707070}
+
+  </style>
+</head>
+
+<body>
+  <h2>
+    baguette
+  </h2>
+  <nav>
+    <span style="position: relative; left: -25%;">
+      <a href="index.html" class = "menulink">home</a>
+    </span>
+    <span style="position: relative; left: 0%;">
+      gallery
+  </span>
+    <span style="position: relative; left: 25%;">
+      <a href="about.html" class = "menulink">about</a>
+  </span>
+  </nav>
+  <span id = "gallery" style = "color: #3D3D3D; font-family: Tahoma, Geneva, serif">
+    <br>
+    <script>
+      for (i = 1; i < 21; i++)
+      {
+        var img = document.createElement("img");
+        //String name = "baguette" + i + ".png";
+        img.src = "baguettephotos/baguette" + i + ".png";
+        var src = document.getElementById("gallery");
+        src.appendChild(img);
+      }
+    </script>
+  </span>
+</body>
+</html>
