@@ -1,0 +1,117 @@
+<style>
+  huh {}
+
+  h2 {
+    padding-top: 1%;
+    padding-bottom: 1.5%;
+    font-family: "Tahoma", Geneva, serif;
+    font-size: 300%;
+    text-align: center;
+    position:relative;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    font-weight: normal;
+  }
+
+  nav {
+    padding-top:0.5%;
+    padding-bottom: 1%;
+    background-color: #DADADA;
+    font-family: "Tahoma", Geneva, serif;
+    font-size: 150%;
+    text-align: center;
+    position:relative;
+    height: 50%;
+    width: 97%;
+    margin: auto;
+    font-weight: normal;
+  }
+
+  h3 {
+    padding-top:2%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    font-family: "Tahoma", Geneva, serif;
+    font-size: 180%;
+    text-align: left;
+    position:relative;
+    margin: auto;
+    font-weight: normal;
+  }
+
+  p {
+     color: #3D3D3D;
+     font-family: Tahoma, Geneva, serif;
+     font-size: 130%;
+     padding-left: 2%
+  }
+
+  img {
+      width:20%;
+      padding:2%
+    }
+
+  quote {
+     font-style: italic;
+     color: #3D3D3D;
+     font-family: Tahoma, Geneva, serif;
+     font-size: 130%;
+     padding-left: 5%;
+  }
+
+  author {
+    color: #3D3D3D;
+    font-family: Tahoma, Geneva, serif;
+    font-size: 100%;
+    padding-left: 8%;
+    display:block;
+    padding-top: 0.25%;
+  }
+
+  .hiddenbread {
+    opacity: 0;
+    display:block;
+    position: fixed;
+    width: 10%;
+    left: 70%;
+    top: 85%;
+  }
+
+  .hiddenbread:hover {
+    opacity: 100%;
+    cursor: pointer;
+  }
+
+  .hiddenmessage {
+    background-color: red;
+    opacity: 0;
+    color: black;
+    border-width: 2px;
+    border-style: solid;
+    margin: auto;
+    font-family: Tahoma, Geneva, serif;
+    font-size: 500%;
+    display: block;
+    position:relative;
+    text-align: center;
+    padding-left:1%;
+    padding-right: 1%;
+    margin-top: 2%;
+    height:100%;
+    width: fit-content;
+  }
+
+  .menulink {
+    color: black;
+    text-decoration: none;
+  }
+  .menulink:hover{color:#707070}
+
+  bigbutton {
+    color: #3D3D3D;
+    font-size: 100%;
+    padding: 5%;
+  }
+
+</style>
