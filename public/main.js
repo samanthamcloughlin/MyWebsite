@@ -1,5 +1,5 @@
 
-$( document ).ready(function() {
+$(document).ready(function() {
   $("#bigbutton").click(function(){
     document.getElementById("bigbutton").style.color = "red";
     alert("hi!");
@@ -10,6 +10,7 @@ $( document ).ready(function() {
     document.getElementById("hiddenmessage").style.opacity = "1";
   });
 
-  $.ajax({url: "/pages/splash.html", success: loadContent}); 
-
+  $("#playgame").click(function(){
+    $('#game_content').load("game.html");
+  });
 });
