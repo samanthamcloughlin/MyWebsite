@@ -27,5 +27,21 @@
   </span>
   </nav>
 
-  <img src = "sam.png" style = "position: relative; left: 25%">
+  <img src = "sam.png" class = "sam" style = "position: relative; float: left; left: 15%; width: 20%">
+  <img src = "sam2.png" class = "sam" style = "position: relative; float: right;  right: 15%; width: 20%">
+  <h3 style = "float: center; position: relative; text-align: center"> hi! i'm sam </h3>
+  <p style = "position: relative; text-align: center; padding-left: 39%; padding-right: 39%"> This website is for my computer science class! A little about myself: I like debate, coding, linguistics, and cooking videos. I also don't like talking about myself too much so instead this website will be dedicated to bread. </p>
+
+  <div id = "flowers" style = "display: inline; float: left; width: 100%">
+    <script>
+      for (i = 1; i < 15; i++)
+      {
+        var img = document.createElement("img");
+        img.src = "flower.png";
+        img.setAttribute("class", "flowers")
+        var src = document.getElementById("flowers");
+        src.appendChild(img);
+      }
+    </script>
+  </div>
   </body>

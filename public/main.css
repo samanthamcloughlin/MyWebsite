@@ -5,7 +5,7 @@
     padding-top: 1%;
     padding-bottom: 1.5%;
     font-family: "Tahoma", Geneva, serif;
-    font-size: 300%;
+    font-size: 3vw;
     text-align: center;
     position:relative;
     height: 100%;
@@ -19,12 +19,13 @@
     padding-bottom: 1%;
     background-color: #DADADA;
     font-family: "Tahoma", Geneva, serif;
-    font-size: 150%;
+    font-size: 1.5vw;
     text-align: center;
     position:relative;
     height: 50%;
     width: 97%;
     margin: auto;
+    margin-bottom: 2%;
     font-weight: normal;
   }
 
@@ -33,7 +34,7 @@
     padding-bottom: 1%;
     padding-left: 2%;
     font-family: "Tahoma", Geneva, serif;
-    font-size: 180%;
+    font-size: 1.8vw;
     text-align: left;
     position:relative;
     margin: auto;
@@ -43,14 +44,9 @@
   p {
      color: #3D3D3D;
      font-family: Tahoma, Geneva, serif;
-     font-size: 130%;
+     font-size: 1.3vw;
      padding-left: 2%
   }
-
-  img {
-      width:20%;
-      padding:2%
-    }
 
   quote {
      font-style: italic;
@@ -112,6 +108,26 @@
     color: #3D3D3D;
     font-size: 100%;
     padding: 5%;
+  }
+
+  .sam {
+    border-style: dotted;
+    padding: 7px;
+    border-width: 3px;
+  }
+
+  .galleryphoto
+  {
+    width:20%;
+    padding:2%;
+  }
+
+  .flowers
+  {
+    padding:2%;
+    padding-top: 5%;
+    width: 3%;
+    display: inline;
   }
 
   .game-outter-div {

@@ -26,14 +26,17 @@
       <a href="gamepage.html" class = "menulink">game</a>
   </nav>
   <span id = "gallery" style = "color: #3D3D3D; font-family: Tahoma, Geneva, serif">
-    <br>
     <script>
       for (i = 1; i < 21; i++)
       {
+        const newSpan = document.createElement("span");
+        newSpan.setAttribute("id", "baguette" + i);
         var img = document.createElement("img");
+        img.setAttribute("class", "galleryphoto")
         img.src = "baguettephotos/baguette" + i + ".png";
         var src = document.getElementById("gallery");
-        src.appendChild(img);
+        src.appendChild(newSpan);
+        newSpan.appendChild(img);
       }
     </script>
   </span>
