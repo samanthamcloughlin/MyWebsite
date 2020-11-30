@@ -1,5 +1,6 @@
 {
   "projects": {
-    "MyWebsite": "samwebsite-ea8d3"
+    "MyWebsite": "samwebsite-ea8d3",
+    "default": "samwebsite-ea8d3"
   }
 }
