@@ -6,7 +6,6 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
   <script src="main.js"></script>
 
-
   <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/samwebsite-ea8d3.appspot.com/o/flower.png?alt=media&token=96742478-6801-4f3a-94c2-207168c7e17c">
 
   <title>a website</title>
@@ -40,6 +39,39 @@
   <div id = "game_content"></div>
   <div id = "js_data"></div>
   <div id = "rss_data"></div>
+
+  <input type="text" id="time"></input>
+  <button id="vote_chocolate">Vote on Chocolate</button>
+  <button id="latest_vote">Get Latest Vote</button>
+  <p>
+  <h3>
+    <div style="display:inline-block;">Latest Vote:</div>
+    <div style="display:inline-block;" id="chocolate_output"></div>
+  </h3>
+  </p>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script> 
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDc65KJZNFsxfvbC5PZdIhuqsd51GFstJk",
+    authDomain: "samwebsite-ea8d3.firebaseapp.com",
+    databaseURL: "https://samwebsite-ea8d3.firebaseio.com",
+    projectId: "samwebsite-ea8d3",
+    storageBucket: "samwebsite-ea8d3.appspot.com",
+    messagingSenderId: "1089225652505",
+    appId: "1:1089225652505:web:4441fabecdfbfa8ba36d88"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 </script>
+
+<script src = "sudoku.js"></script>
 </body>
 </html>

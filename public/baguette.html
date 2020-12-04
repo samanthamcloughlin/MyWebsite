@@ -49,5 +49,21 @@
 
   <img src = "baguette.png" class = "hiddenbread" id = "hiddenbread" onclick="reveal()">
   <span class = "hiddenmessage" id = "hiddenmessage">BAGUETTE LOCATED</span>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script> 
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDc65KJZNFsxfvbC5PZdIhuqsd51GFstJk",
+      authDomain: "samwebsite-ea8d3.firebaseapp.com",
+      databaseURL: "https://samwebsite-ea8d3.firebaseio.com",
+      projectId: "samwebsite-ea8d3",
+      storageBucket: "samwebsite-ea8d3.appspot.com",
+      messagingSenderId: "1089225652505",
+      appId: "1:1089225652505:web:4441fabecdfbfa8ba36d88"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
 </body>
 </html>
