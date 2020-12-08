@@ -1,7 +1,7 @@
 const time = $("#time");
-const latestChocolateVote = $("#latest_vote");
-const voteOnChocolate = $("#vote_chocolate");
-const chocolateOutput = $("#chocolate_output");
+const latestTime = $("#latest_time");
+const sudokuInput = $("#sudoku_input");
+const sudokuOutput = $("#sudoku_output");
 
 var firestore = firebase.firestore();
 const databaseDocumentRef = firestore.doc("sudoku/time");
@@ -16,8 +16,8 @@ function generalErrorHandler(errer) {
     console.log("Got an error", error);
 };
 
-function submitChocolateVote() {
-    console.log('submitting chocolate vote: ' + time.val());
+function submitTime() {
+    console.log('submitting time: ' + time.val());
     databaseDocumentRef.set(
       {
           time : time.val()
@@ -27,14 +27,14 @@ function submitChocolateVote() {
 
 
 
-voteOnChocolate.click(submitChocolateVote);
+sudokuInput.click(submitTime);
 
 function getSudokuDocument(doc)
 {
   if (doc && doc.exists){
     var myData = doc.data();
     console.log(myData);
-    chocolateOutput.html(myData.time);
+    sudokuOutput.html(myData.time);
   }
 }
 
@@ -42,7 +42,7 @@ function getTime(){
   databaseDocumentRef.get().then(getSudokuDocument).catch(generalErrorHandler)
 }
 
-latestChocolateVote.click(getTime);
+latestTime.click(getTime);
 
 function getRealTimeUpdate() {
   databaseDocumentRef.onSnapshot()

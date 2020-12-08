@@ -4,6 +4,7 @@
   <link href="main.css" rel="stylesheet">
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+
   <script src="main.js"></script>
 
   <link rel="icon" href="https://firebasestorage.googleapis.com/v0/b/samwebsite-ea8d3.appspot.com/o/flower.png?alt=media&token=96742478-6801-4f3a-94c2-207168c7e17c">
@@ -41,22 +42,18 @@
   <div id = "rss_data"></div>
 
   <input type="text" id="time"></input>
-  <button id="vote_chocolate">Vote on Chocolate</button>
-  <button id="latest_vote">Get Latest Vote</button>
+  <button id="sudoku_input">Enter Sudoku Time</button>
+  <button id="latest_time">Get Latest Time</button>
   <p>
   <h3>
-    <div style="display:inline-block;">Latest Vote:</div>
-    <div style="display:inline-block;" id="chocolate_output"></div>
+    <div style="display:inline-block;">Latest Time:</div>
+    <div style="display:inline-block;" id="sudoku_output"></div>
   </h3>
   </p>
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script> 
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
