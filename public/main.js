@@ -1,35 +1,33 @@
 $(document).ready(function() {
-  $("#bigbutton").click(function(){
+  $("#bigbutton").click(function() {
     document.getElementById("bigbutton").style.color = "red";
     alert("hi!");
   });
 
-  $("#hiddenbread").click(function(){
+  $("#hiddenbread").click(function() {
     document.getElementById("hiddenmessage").style.opacity = "1";
   });
 
-  $("#playgame").click(function(){
+  $("#playgame").click(function() {
     $('#game_content').load("game.html");
   });
 });
 
-
-function loadJSAsHTML(result)
-{
+function loadJSAsHTML(result) {
   var myString = "";
 
   for (var i = 0; i < result.length; i++) {
     var nextResult = result[i];
 
-    myString += "<h2>" + nextResult['headline']  + "</h2>";
-    myString += "<p>" + nextResult['author']  + ", " + nextResult['date'] + "</p>";
+    myString += "<h2>" + nextResult['headline'] + "</h2>";
+    myString += "<p>" + nextResult['author'] + ", " + nextResult['date'] + "</p>";
     myString += "<h3>" + nextResult['body'] + "</h3><br><br><br>";
   }
   $("#js_data").html(myString);
 
 }
 
-function requestJSData(){
+function requestJSData() {
   $.ajax({
     dataType: "json",
     url: "https://firebasestorage.googleapis.com/v0/b/advancedtopicscs.appspot.com/o/blogArticles.json?alt=media&token=478d06a6-d7e5-4cac-a92d-7670dea8de17",
@@ -37,7 +35,7 @@ function requestJSData(){
   });
 }
 
-function load538Rss(result){
+function load538Rss(result) {
 
   result = xmlToJson(result);
 
@@ -47,7 +45,7 @@ function load538Rss(result){
 
   for (var i = 0; i < result.length; i++) {
     var nextResult = result[i];
-    htmlStr += "<a href=" + nextResult['link'] + "> <p>" + nextResult['title']  + "</p></a>";
+    htmlStr += "<a href=" + nextResult['link'] + "> <p>" + nextResult['title'] + "</p></a>";
     htmlStr += "<p style = \"font-size: 80%\">" + nextResult['pubDate'] + "</p>"
     htmlStr += "<br>"
   }
@@ -55,7 +53,8 @@ function load538Rss(result){
   $("#rss_data").html(htmlStr);
 
 }
-function request538Rss(){
+
+function request538Rss() {
   $.ajax({
 
     dataType: "xml",
